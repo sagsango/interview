@@ -72,10 +72,8 @@ double Median(vector<int>& A, vector<int>& B)
 		int mid = (start + end) / 2;
 		int leftAsize = mid;
 		int leftBsize = realmidinmergedarray - mid;
-		int leftA
-			= (leftAsize > 0)
-			? A[leftAsize - 1]
-			: INT_MIN; // checking overflow of indices
+		int leftA 
+			= (leftAsize > 0) ? A[leftAsize - 1] : INT_MIN; // checking overflow of indices
 		int leftB
 			= (leftBsize > 0) ? B[leftBsize - 1] : INT_MIN;
 		int rightA

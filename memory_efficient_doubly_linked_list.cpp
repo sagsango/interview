@@ -12,7 +12,7 @@ class Node
 {
 	public:
 	int data;
-	Node* npx; /* XOR of next and previous node */
+	Node* npx; /* TODO: XOR of next and previous node */
 };
 
 /* returns XORed value of the node addresses */

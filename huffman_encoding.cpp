@@ -6,6 +6,8 @@
 	 print all the huffman codes in preorder traversal of the tree.
  */
 
+
+// TODO: Use priority queue of node
 class Solution{
 	private:
 		struct Node{

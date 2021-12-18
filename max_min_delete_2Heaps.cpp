@@ -24,6 +24,8 @@ Frequency: Least frequent
 Frequency: Least frequent.
  */
 
+// TODO: Use multiset or Multimap ( but evey operation here would be log(N) ).
+
 
 // C program for efficient data structure
 #include <stdio.h>
@@ -328,7 +330,7 @@ void deleteMax(struct MyDS* myDS)
 	minHeap->array[temp->minHeapIndex] = minHeap->array[minHeap->size - 1];
 	--minHeap->size;
 	minHeap->array[temp->minHeapIndex]->minHeapIndex = temp->minHeapIndex;
-	minHeapify(minHeap, temp->minHeapIndex);
+	minHeapify(minHeap, temp->minHeapIndex); // TODO: this type of deletion can be incorrect, so put -inf here then call pop().
 
 	// remove the node from List
 	removeLNode(myDS->list, &temp);
@@ -354,7 +356,7 @@ void deleteMin(struct MyDS* myDS)
 	maxHeap->array[temp->maxHeapIndex] = maxHeap->array[maxHeap->size - 1];
 	--maxHeap->size;
 	maxHeap->array[temp->maxHeapIndex]->maxHeapIndex = temp->maxHeapIndex;
-	maxHeapify(maxHeap, temp->maxHeapIndex);
+	maxHeapify(maxHeap, temp->maxHeapIndex);// TODO: this type of deleteion can be incorect, so put +inf here then call pop(). 
 
 	// remove the node from List
 	removeLNode(myDS->list, &temp);
