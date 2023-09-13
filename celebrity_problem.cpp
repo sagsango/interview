@@ -7,6 +7,21 @@
 // in the given Matrix of people
 // Code by Sparsh_cbs
 
+
+/*
+
+XXX:
+The Celebrity Problem using Elimination Technique:
+Some observations are based on elimination technique (Refer to Polya’s How to Solve It book). 
+
+If A knows B, then A can’t be a celebrity. Discard A, and B may be celebrity.
+If A doesn’t know B, then B can’t be a celebrity. Discard B, and A may be celebrity.
+Repeat above two steps till there is only one person.
+Ensure the remained person is a celebrity. (What is the need of this step?)
+
+*/
+
+
 import java.io.*;
 
 class GFG {
