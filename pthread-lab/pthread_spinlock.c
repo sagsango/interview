@@ -13,7 +13,7 @@ void * thread_func (void * var)
 {
 	for (int i=0; i<ITERATIONS; ++i) {
 		pthread_spin_lock(&lock);
-		gvar += i;
+		gvar += 1;
 		pthread_spin_unlock(&lock);
 	}
 	pthread_exit(0);
@@ -23,7 +23,7 @@ int main ()
 {
 	pthread_t thread[THREADS];
 	
-	pthread_spin_init (&lock, PTHREAD_PROCESS_PRIVATE); /* See the man page for spin_lock betwen process */
+	pthread_spin_init (&lock, 0 & PTHREAD_PROCESS_PRIVATE); /* See the man page for spin_lock betwen process */
 	
 	for (int i=0; i<THREADS; ++i) {
 		pthread_create (&thread[i], NULL, &thread_func, NULL);
@@ -33,7 +33,7 @@ int main ()
 		pthread_join (thread[i], NULL);
 	}
 	
-	pthread_spin_destory (&lock);
+	pthread_spin_destroy (&lock);
 
-	assert (gavr == ITERATIONS * THREADS);
+	assert (gvar == ITERATIONS * THREADS);
 }
