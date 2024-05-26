@@ -1,3 +1,6 @@
 [submodule "System-Design"]
 	path = System-Design
 	url = https://github.com/sagsango/System-Design.git
+[submodule "cp"]
+	path = cp
+	url = https://github.com/sagsango/cp.git
