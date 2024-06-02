@@ -7,3 +7,9 @@
 [submodule "rfc"]
 	path = rfc
 	url = https://github.com/sagsango/rfc.git
+[submodule "Design-Patterns"]
+	path = Design-Patterns
+	url = https://github.com/sagsango/Design-Patterns.git
+[submodule "DesignPatterns"]
+	path = DesignPatterns
+	url = https://github.com/sagsango/DesignPatterns.git
