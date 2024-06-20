@@ -8,3 +8,5 @@ https://www.interviewbit.com
 
 Review:
   https://www.youtube.com/watch?v=rnkjquApJdw&list=PLKYEe2WisBTFNIWCOYfPVepgPQJ6vUdiu&index=119
+  https://leetcode.com/problems/minimize-manhattan-distances/
+
