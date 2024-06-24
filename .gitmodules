@@ -13,3 +13,6 @@
 [submodule "DesignPatterns"]
 	path = DesignPatterns
 	url = https://github.com/sagsango/DesignPatterns.git
+[submodule "cpp"]
+	path = cpp
+	url = https://github.com/sagsango/cpp.git
