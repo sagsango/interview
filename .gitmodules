@@ -16,3 +16,6 @@
 [submodule "cpp"]
 	path = cpp
 	url = https://github.com/sagsango/cpp.git
+[submodule "advanced-data-structures"]
+	path = advanced-data-structures
+	url = https://github.com/sagsango/advanced-data-structures.git
