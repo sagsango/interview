@@ -1,4 +1,5 @@
 /* 2 sum problem : https://www.techiedelight.com/find-pair-with-given-sum-array/     */
+/* this is a window problem not 2 pointers */
 Using Sorting
 The idea is to sort the given array in ascending order and maintain search space
 by maintaining two indices (low and high) that initially points to two endpoints 
