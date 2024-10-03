@@ -19,6 +19,8 @@
 	 3. snake head vertex (do not have 6 vertex as case 1) and they have only one edge of 0 weight
             to the snake tail.
 
+           Just use recursion to avide the weited edges, and do memoization togather for O(N) solution
+
           )
   
   
