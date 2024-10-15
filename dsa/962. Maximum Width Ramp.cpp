@@ -135,7 +135,31 @@ public:
     }
 };
 
+// Mine:
+class Solution {
+public:
+    int maxWidthRamp(vector<int>& nums) {
+        int n = nums.size();
+        vector <int> mxd = nums, mnd = nums;
+        for (int i=1; i<n; ++i) {
+            mnd[i] = min(mnd[i], mnd[i-1]);
+            //mxd[i] = max(mxd[i], mxd[i-1]);
+        }
+        for (int i=n-2; i>=0; --i) {
+            mxd[i] = max(mxd[i], mxd[i+1]);
+        }
 
+        int r = 0, ans = 0;
+        for (int i=0; i<n; ++i) {
+            while (r+1 < n && mnd[i] <= mxd[r+1]) {
+                ++r;
+            }
+            ans = max(ans, r - i);
+        }
+
+        return ans;
+    }
+};
 
 
 
