@@ -16,3 +16,6 @@ Review:
   https://www.youtube.com/watch?v=rnkjquApJdw&list=PLKYEe2WisBTFNIWCOYfPVepgPQJ6vUdiu&index=119
   https://leetcode.com/problems/minimize-manhattan-distances/
 
+
+Problem set:
+  https://leetcode.com/discuss/interview-question/5808829/important-questions
