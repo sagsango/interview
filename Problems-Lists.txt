@@ -8,10 +8,14 @@ https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Q
 https://www.interviewbit.com
   DP is must
 
-
+blind 75;
+https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
 
 
 Review:
   https://www.youtube.com/watch?v=rnkjquApJdw&list=PLKYEe2WisBTFNIWCOYfPVepgPQJ6vUdiu&index=119
   https://leetcode.com/problems/minimize-manhattan-distances/
 
+
+Problem set:
+  https://leetcode.com/discuss/interview-question/5808829/important-questions
